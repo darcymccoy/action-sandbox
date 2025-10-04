@@ -1,2 +1,3 @@
-# action-sandbox
-A repository for testing GitHub actions
+# Action Sandbox
+
+A repository for testing GitHub actions.
