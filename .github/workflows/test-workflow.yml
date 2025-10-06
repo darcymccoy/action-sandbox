@@ -1,0 +1,29 @@
+name: Test Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test-action:
+    name: GitHub Actions Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v5
+
+      - name: Test Action
+        id: test-action
+        uses: darcymccoy/merge-conflict-action@55dd57bdf5efa0cd054c72957d0896169892b5ed
+        with:
+          milliseconds: 2000
+
+      - name: Print Output
+        id: output
+        run: echo "${{ steps.test-action.outputs.time }}"
