@@ -1,4 +1,4 @@
-This is a different change than branch-1 (and to the same line).
+Line 1
 Line 2
 Line 3
 Line 4
