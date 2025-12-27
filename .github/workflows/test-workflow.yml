@@ -20,7 +20,7 @@ jobs:
 
       - name: Test Action
         id: test-action
-        uses: darcymccoy/merge-conflict-action@7c11050a440abdbd46e933b99ffffabf20b95d3d
+        uses: darcymccoy/merge-conflict-action@396efe09e919aadfaab2b7ab49777d7053ab288f
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           post-comments: true
